@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/translucent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rel_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/base_orange">
+
+            <TextView
+                android:id="@+id/txv_actionbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="联系客服"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/btn_close"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/ic_rightbtn"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/qq1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_qqone"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:text="QQ客服"
+                android:textColor="@color/base_gray"
+                android:textSize="@dimen/common_text" />
+
+
+            <TextView
+                android:id="@+id/qq2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_qqtwo"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:text="QQ客服"
+                android:textColor="@color/base_gray"
+                android:textSize="@dimen/common_text" />
+
+            <TextView
+                android:id="@+id/qq3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_qqthree"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:text="QQ客服"
+                android:textColor="@color/base_gray"
+                android:textSize="@dimen/common_text" />
+
+            <TextView
+                android:id="@+id/qq4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_qqfour"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:text="QQ客服"
+                android:textColor="@color/base_gray"
+                android:textSize="@dimen/common_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btn_recharge"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_txv_orange"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/qqGroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_qqgroup"
+                    android:drawablePadding="10dp"
+                    android:text="QQ群1"
+                    android:textColor="@color/base_orange"
+                    android:textSize="@dimen/common_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_withdrawcash"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_txv_orange"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/qqGroup2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_qqgroup"
+                    android:drawablePadding="10dp"
+                    android:text="QQ群2"
+                    android:textColor="@color/base_orange"
+                    android:textSize="@dimen/common_text" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="客服电话："
+                android:textColor="@color/base_gray"
+                android:textSize="@dimen/common_text_small" />
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="15398007890"
+                android:textColor="@color/base_gray"
+                android:textSize="@dimen/common_text_small" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

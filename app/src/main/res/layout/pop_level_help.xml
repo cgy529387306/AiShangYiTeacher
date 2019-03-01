@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/translucent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="12dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="星级说明"
+            android:textSize="@dimen/common_text_large"
+            android:textColor="@color/text_color"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="星级是根据您的综合水平，由平台方定义的，如果您觉得资历能达到更高级的话，请联系平台客服进行评估。"
+            android:textSize="@dimen/common_text_large"
+            android:textColor="@color/text_color"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/line_color"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="我知道了"
+            android:textSize="@dimen/common_text_large"
+            android:textColor="@color/text_color"/>
+    </LinearLayout>
+</LinearLayout>

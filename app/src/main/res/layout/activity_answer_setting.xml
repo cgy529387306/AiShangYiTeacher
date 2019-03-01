@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="请输入您擅长回答的内容，最多20字"
+        android:maxLength="20"
+        android:minHeight="180dp"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hint_color"
+        android:textSize="@dimen/common_text_small" />
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/shape_btn_orange"
+        android:text="保存"
+        android:textColor="@color/white" />
+</LinearLayout>

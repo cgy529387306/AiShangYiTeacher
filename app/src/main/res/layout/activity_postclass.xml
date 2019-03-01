@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_classsort"
+            android:drawablePadding="10dp"
+            android:text="课程分类"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/common_text" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/txv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="3dp"
+            android:drawableRight="@drawable/common_icon_arrow"
+            android:singleLine="true"
+            android:text="小提琴"
+            android:textColor="@color/base_gray"
+            android:textSize="@dimen/common_text" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_color"/>
+    <include
+        layout="@layout/common_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/base_orange"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:textSize="@dimen/common_text" />
+</LinearLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/line_color" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="周一"
+                    android:textColor="@color/base_gray"
+                    android:textSize="@dimen/common_text" />
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_color" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="周二"
+                    android:textColor="@color/base_gray"
+                    android:textSize="@dimen/common_text" />
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_color" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="周三"
+                    android:textColor="@color/base_gray"
+                    android:textSize="@dimen/common_text" />
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_color" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="周四"
+                    android:textColor="@color/base_gray"
+                    android:textSize="@dimen/common_text" />
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_color" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="周五"
+                    android:textColor="@color/base_gray"
+                    android:textSize="@dimen/common_text" />
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_color" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="周六"
+                    android:textColor="@color/base_gray"
+                    android:textSize="@dimen/common_text" />
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_color" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="周日"
+                    android:textColor="@color/base_gray"
+                    android:textSize="@dimen/common_text" />
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_color" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_color" />
+            <com.weima.aishangyi.jiaoshi.widget.LineGridView
+                android:id="@+id/timeableGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="7"
+                android:stretchMode="columnWidth" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/line_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:text="PS:点击编辑授课时间，默认每周可授课时间都相同"
+                android:textColor="@color/base_gray"
+                android:textSize="@dimen/common_text_small" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/background_color" />
+            <LinearLayout
+                android:id="@+id/btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:background="@drawable/bg_gray_kuang">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/ic_numpicker_plus"
+                    android:text="新增一行"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_text" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/background_color" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/base_orange" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="留言说明"
+                    android:textColor="@color/base_orange"
+                    android:textSize="@dimen/common_text" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_color" />
+
+            <com.weima.aishangyi.jiaoshi.widget.ClearableEditText
+                android:id="@+id/add_text_input"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="法定节假日没有授课，请理解哦！"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint_color"
+                android:textSize="16dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/background_color" />
+        </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/base_orange"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_text" />
+</LinearLayout>

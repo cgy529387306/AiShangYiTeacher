@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_find" />
+
+
+    <LinearLayout
+        android:id="@+id/btn_identity"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/btn_list_no_boder"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_shenfen"
+            android:drawablePadding="10dp"
+            android:text="身份认证"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/common_text" />
+
+        <TextView
+            android:id="@+id/txv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="4dp"
+            android:drawableRight="@drawable/common_icon_arrow"
+            android:text="未认证"
+            android:textColor="@color/base_gray"
+            android:textColorHint="@color/hint_color"
+            android:textSize="@dimen/common_text" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:id="@+id/btn_education"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/btn_list_no_boder"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_xueli"
+            android:drawablePadding="6dp"
+            android:text="学历认证"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/common_text" />
+
+        <TextView
+            android:id="@+id/txv_ed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="4dp"
+            android:drawableRight="@drawable/common_icon_arrow"
+            android:text="未认证"
+            android:textColor="@color/base_gray"
+            android:textColorHint="@color/hint_color"
+            android:textSize="@dimen/common_text" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:id="@+id/btn_qualification"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/btn_list_no_boder"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_zige"
+            android:drawablePadding="10dp"
+            android:text="资格认证"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/common_text" />
+
+        <TextView
+            android:id="@+id/txv_ql"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="4dp"
+            android:drawableRight="@drawable/common_icon_arrow"
+            android:text="未认证"
+            android:textColor="@color/base_gray"
+            android:textColorHint="@color/hint_color"
+            android:textSize="@dimen/common_text" />
+    </LinearLayout>
+</LinearLayout>

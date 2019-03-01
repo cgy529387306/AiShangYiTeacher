@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp" >
+        <EditText
+            android:id="@+id/add_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="在这里做个详细的自我介绍吧"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint_color"
+            android:textSize="16dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_color" />
+        <com.weima.aishangyi.jiaoshi.widget.NestedGridView
+            android:id="@+id/add_pic_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:numColumns="3"
+            android:paddingTop="10dp"
+            android:stretchMode="columnWidth" />
+    </LinearLayout>
+
+</ScrollView>
